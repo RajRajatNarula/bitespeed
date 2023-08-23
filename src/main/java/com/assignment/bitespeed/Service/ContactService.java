@@ -138,9 +138,10 @@ public class ContactService
         return contactDtoOutput;
     }
 
-    public void selectAll()
+    public List<Contact> selectAll()
     {
         List<Contact> contacts=contactRepository.findAll();
-        System.out.println(contacts);
+        return contacts;
+
     }
 }
